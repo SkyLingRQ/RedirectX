@@ -17,13 +17,15 @@ args = parse.parse_args()
 
 
 async def scan(url, session):
-     async with session.get(url, allow_redirects=True) as response2:
-        response2 = str(response2.url)
-        if response2.startswith("https://www.google.com/"):
-            print(f"{green}[ VULNERABLLE ] {url}{reset}")
-        else:
-            pass
-
+    try:
+        async with session.get(url, allow_redirects=True) as response2:
+            response2 = str(response2.url)
+            if response2.startswith("https://www.google.com/"):
+                print(f"{green}[ VULNERABLLE ] {url}{reset}")
+            else:
+                pass
+    except Exception:
+        pass
 async def main():
     async with aiohttp.ClientSession() as session:
         task = []
