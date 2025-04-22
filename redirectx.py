@@ -26,9 +26,7 @@ async def main(file):
         urls = rf.readlines()
     async with aiohttp.ClientSession() as session:
         for url in urls:
-            if "=" not in url:
-                pass
-            else:
+            if "=" in url:
                 urlp = urlparse(url)
                 query = parse_qs(urlp.query)
                 for key in query:
