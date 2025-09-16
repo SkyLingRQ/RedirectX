@@ -3,14 +3,18 @@ RedirectX es un script diseñado para la automatización de escaneos de OpenRedi
 # INSTALL
 
 ```bash
-go install https://github.com/SkyLingRQ/RedirectX@latest
+go install github.com/SkyLingRQ/RedirectX@latest
 ```
 
 # USAGE
 ```bash
-Usage:
+Usage RedirectX:
   -file string
         Archivo con las URLs a escanear. (default "redirect.txt")
   -semaphore int
         Implementar semaforo personalizado. (default 50)
+```
+
+```bash
+RedirectX -file archivo_con_urls.txt -sem Implementar semaforo personalizado (Por defecto 50)
 ```
