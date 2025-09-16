@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="img/redirectx.png">
+</p>
+
 # RedirectX
 RedirectX es un script diseñado para la automatización de escaneos de OpenRedirect.
 ## ⬇️ INSTALL
@@ -17,5 +21,8 @@ Usage RedirectX:
 
 ## 👨🏼‍💻 Linux Terminal
 ```bash
-RedirectX -file archivo_con_urls.txt -sem Implementar semaforo personalizado (Por defecto 50)
+RedirectX -file archivo_con_urls.txt -semaphore Implementar semaforo personalizado (Por defecto 50)
 ```
+
+## 📷 Capture
+<img src="img/redirectx_terminal.png">
